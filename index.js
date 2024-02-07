@@ -1,17 +1,22 @@
-function receivesAFunction() {
+function run () {
+    console.log("Are we done yet?");
+};
+
+function receivesAFunction(run) {
     workOutRoutine(run);
 }
 function workOutRoutine(postLiftingActivity) {
-    postLiftingActivity();
+    return postLiftingActivity();
 }
-receivesAFunction();
 
-function receivesAFunction() {
-    return workOutRoutine(run);
-}
+function returnsANamedFunction() {
+    return function exerciseRoutine() {
+    console.log("This is the exercise routine function");
+    };
+} 
 
 function returnsAnAnonymousFunction() {
     return function () {
-    console.log("This is an anonymous");
+    return "This is an anonymous";
     };
 }
