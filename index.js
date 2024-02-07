@@ -1,6 +1,3 @@
-function run() {
-    console.log("Are we done yet?");
-}
 function receivesAFunction() {
     workOutRoutine(run);
 }
